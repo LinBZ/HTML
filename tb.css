@@ -1,0 +1,70 @@
+/*顶部*/
+.top{
+    overflow: hidden;
+    z-index: 9999;
+    background-color: lightgray;
+    margin: 0px;
+    padding: 5px 0px ;
+    height: 100%;
+}
+/*左边*/
+.top_left{
+    float: left;
+}
+/*右边*/
+.top_right{
+    float: right;
+}
+/*下拉按钮*/
+.drop_button {
+    background-color: lightgray;
+    color:gray;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+/*定位下拉内容*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+/* 下拉菜单的链接 */
+.dropdown_content a {
+    color: gray;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/*下拉内容*/
+.dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown_content a:hover {
+    background-color:gainsboro
+}
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown_content {
+    display: block;
+}
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .drop_button {
+    background-color: white;
+    color: orangered;
+}
+
+/*设置顶部未被访问的超链接的样式
+.button_link a:link{
+    color:gray;
+    text-decoration: none;
+}*/
+/*设置鼠标移上去后顶部的超链接的样式*/
+.button_link a:hover{
+    text-decoration: none;
+    color:orangered ;
+}
